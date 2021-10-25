@@ -10,13 +10,7 @@ model_params = {
 
 data_gen_model = 'multi_class'
 
-if data_gen_model == 'portfolio':
-    data_params = {
-        'deg': [16],
-        'tau': [1, 2],
-        'n_factors': [4],
-    }
-elif data_gen_model == 'shortest_path':
+if data_gen_model == 'shortest_path':
     data_params = {
         'deg': [8],
         'eps_bar': [0., 0.5],
